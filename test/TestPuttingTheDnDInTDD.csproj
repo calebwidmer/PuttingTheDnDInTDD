@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PuttingTheDnDInTDDLib\PuttingTheDnDInTDDLib.csproj" />
+    <ProjectReference Include="..\CharacterLib\CharacterLib.csproj" />
   </ItemGroup>
 
 </Project>
