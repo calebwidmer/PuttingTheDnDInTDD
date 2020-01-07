@@ -35,14 +35,38 @@ namespace TestPuttingTheDnDInTDD
             Assert.Equal(10, character.ArmorClass);
         }
 
-
-
         [Fact]
         public void CharacterHitPointsSetTo5()
         {
             Character character = new Character();
 
             Assert.Equal(5, character.HitPoints);
+        }
+
+
+        [Fact]
+        public void CharacterCanRoll()
+        {
+            Character character = new Character();
+
+            Assert.True(character.Roll()>0);
+         
+
+
+        }
+        [Fact]
+        public void CharacterCanHit()
+        {
+            Character protagonist = new Character();
+            Character antagonist = new Character();
+            antagonist.ArmorClass = 14;
+
+
+            
+            Assert.True(protagonist.CanHit(antagonist));
+
+
+
         }
     }
 }
