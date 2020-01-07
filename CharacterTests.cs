@@ -15,5 +15,16 @@ namespace TestPuttingTheDnDInTDD
 
             Assert.Equal("Aragon", character.Name);
         }
+
+        [Fact]
+        public void SetAlignment()
+        {
+            
+            Character character = new Character();
+
+            character.SetAlignment(Alignment.Good);
+
+            Assert.Equal("Good", character.Alignment.ToString());
+        }
     }
 }

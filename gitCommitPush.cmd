@@ -1,4 +1,4 @@
 git add -A
-git commit -m "%commitMessage%"
+git commit -m "ttdTest"
 git push -u origin master
 pause
