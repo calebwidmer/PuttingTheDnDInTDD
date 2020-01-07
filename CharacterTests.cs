@@ -26,5 +26,23 @@ namespace TestPuttingTheDnDInTDD
 
             Assert.Equal("Good", character.Alignment.ToString());
         }
+
+        [Fact] 
+        public void ArmorClassSetTo10()
+        {
+            Character character = new Character();
+
+            Assert.Equal(10, character.ArmorClass);
+        }
+
+
+
+        [Fact]
+        public void CharacterHitPointsSetTo5()
+        {
+            Character character = new Character();
+
+            Assert.Equal(5, character.HitPoints);
+        }
     }
 }
